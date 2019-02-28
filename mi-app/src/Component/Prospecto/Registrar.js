@@ -36,21 +36,6 @@ class Registrar extends Component{
     });
    }
  
-//   Guardar(e) {
-//     e.preventDefault();
-//     var object ={
-//       Nombre:this.state.Nombre,
-//       Apellido:this.state.Apellido,
-//       Correo:this.state.Correo,
-//       Direccion:this.state.Direccion
-//     }
-//     this.setState({
-//       list: this.state.list.push(object)
-//     });
-//     localStorage.setItem('list',this.state.list);
-//      console.log(this.state);
-//      history.pushLater({ pathname: "/listar" })
-//   }
     render(){
         return(
         <section className="view-prospecto-registro" id="Prospecto">

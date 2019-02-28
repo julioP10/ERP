@@ -1,19 +1,8 @@
 
-  // handleClick(e) {
-  //   var ee = e.currentTarget.dataset.id;
-  //   console.log(ee)
-  //   var ddd = document.getElementById(ee).getElementsByClassName;
-  //   this.setState(state => ({
-  //     isToggleOn: !state.isToggleOn
-  //   }));
-  // }
-
 import React, {Component} from 'react'
-import Child from './Child'
 import { Link} from 'react-router-dom'
 import history from './history'
 import Routes from './Routes'
-import UserForm from './UserForm'
 import 'sweetalert/dist/sweetalert.css'
 const Menu =[
   {
@@ -26,6 +15,12 @@ const Menu =[
     id:1,
     nombre:'Registro',
     path:'/registrar',
+    icono:'fa fa-user'
+   },
+   {
+    id:2,
+    nombre:'Alumno',
+    path:'/alumno',
     icono:'fa fa-user'
    },
   ]
@@ -86,7 +81,6 @@ class App extends Component {
               </form>
             </div>
           </nav>
-         {/* <Child IrEditar={this.IrEditar} /> */}
         <Routes/>
       </div>
     );
